@@ -38,6 +38,6 @@ Route::group(["prefix" => "blog"], function () {
     Route::put("/{id}", [BlogController::class, 'update'] ); // get all list update
 
     // http://localhost:8000/api/blog/1
-    // Route::delete("/{id}", [BlogController::class, 'destroy'] ); // get all list
+    Route::delete("/{id}", [BlogController::class, 'destroy'] ); // get all list
 });
 
